@@ -739,11 +739,15 @@ color: var(--secondary-text-color);
   padding-bottom: 60px;
   background-color: var(--dark-background-color);
 }
-
+.box-v2 {
+  display: block;
+  width: 231px;
+  height: 81px;
+}
 .footer .info {
   display: flex;
   margin-right: auto;
-  gap: 70px;
+  /* gap: 70px; */
 }
 
 .footer .logo {
@@ -784,6 +788,7 @@ color: var(--secondary-text-color);
 .box-v3 {
   display: block;
   padding-top: 11px;
+  margin-left: 70px;
 }
 
 .social-footer {
@@ -853,12 +858,14 @@ color: var(--secondary-text-color);
   border-radius: 4px;
 
 }
-
 .submit-mail {
   position: relative;
   display: flex;
   padding: 10px 28px;
   margin: 0 ;
+  width: 200px;
+  height: 50px;
+  justify-content: center;
   align-items: center;
   text-align: center;
   border: none;
