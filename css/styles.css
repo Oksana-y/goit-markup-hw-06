@@ -471,7 +471,7 @@ p {
 .icon-close {
   fill: #000000;
 }
-.close-btn .icon-close:focus {
+.close-btn:focus {
   fill: var(--accent-text-color);
   cursor: pointer;
 }
