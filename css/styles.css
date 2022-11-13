@@ -446,8 +446,8 @@ p {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
-  min-width: 528px;
-  min-height: 581px;
+  width: 528px;
+  height: 581px;
   padding: 40px;
   overflow: auto;
   background-color: var(--main-background-color);
@@ -456,6 +456,8 @@ p {
   transition: transform var(--easy-go), opacity var(--easy-go), visibility var(--easy-go);
 }
 .close-btn {
+  display: flex;
+  align-items: center;
   position: absolute;
   top: 8px;
   right: 8px;
@@ -469,6 +471,7 @@ p {
   background-position: center; */
 }
 .icon-close {
+
   fill: #000000;
 }
 .icon-close:hover {
@@ -478,7 +481,7 @@ p {
 .modal-text {
 font-weight: 700;
 font-size: 20px;
-margin: 14px;
+margin-bottom: 12px;
 line-height: 1.15;
 text-align: center;
 letter-spacing: 0.03em;
@@ -503,10 +506,11 @@ textarea {
   width: 100%;
   height: 120px;
   padding: 12px 16px 12px 16px;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   outline: none;
+  resize: none;
 }
 textarea::placeholder{
 font-weight: 400;
@@ -581,7 +585,7 @@ color: var(--secondary-text-color);
   height: 50px;
   width: 200px;
   padding: 10px 52px;
-  margin: 0 164px 40px 164px;
+  margin: auto;
   align-items: center;
   text-align: center;
   border: none;
@@ -823,14 +827,17 @@ color: var(--secondary-text-color);
 /* Форма для підпису на розсилку */
 .form {
   display: block;
-  margin-top: 23px;
-  margin-bottom: 23px;
+  margin-left: 93px;
+  padding-top: 11px;
+  /* margin-top: 23px;
+  margin-bottom: 23px; */
 }
 
 .user-form-subscribe {
   display: flex;
   margin: auto;
   justify-content: space-between;
+  align-items: center;
 }
 
 .input-mail {
@@ -839,9 +846,12 @@ color: var(--secondary-text-color);
   height: 50px;
   padding: 15px 10px 15px 16px ;
   margin: 0 12px 0 0;
-  border: 1px solid rgba(33, 33, 33, 0.2);
-  border-radius: 4px;
   outline: none;
+  background-color: var(--dark-background-color);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+
 }
 
 .submit-mail {
