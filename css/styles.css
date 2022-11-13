@@ -464,14 +464,17 @@ p {
   border-radius: 50%;
   background: var(--main-background-color);
   border: 1px solid rgba(0, 0, 0, 0.1);
-  background-image: url(../images/close.svg);
+  /* background-image: url(../images/close.svg);
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: center; */
 }
-/* .close-btn:focus {
+.icon-close {
+  fill: #000000;
+}
+.close-btn .icon-close:focus {
   fill: var(--accent-text-color);
   cursor: pointer;
-} */
+}
 .modal-text {
 font-weight: 700;
 font-size: 20px;
